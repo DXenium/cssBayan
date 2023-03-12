@@ -1,69 +1,77 @@
-body {
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 24px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.main_bayan_content {
+    text-align: left;
+    color: grey;
+    border-top: 1px solid grey;
+    overflow: hidden;
+}
+.main_bayan_img img{
+    width:80px;
+}
+
+.main_bayan_img{
+    margin: o auto;
+    height: 100%;
+    transition: all 1.3s;
+}
+
+.main_bayan_img:hover{
+    filter: saturate(0);
+}
+
+.main_bayan_img:active{
+    filter: saturate(0);
+    scale: 0.05;
+}
+
+.main_icon {
+    width: 15px;
+    height: 15px;
+    transition: all 1.3s;
+    opacity: 0;
+}
+
+.main_bayan_title span {
     font-size: 20px;
 }
 
-.wrap {
-    margin: 100px auto;
-    width: 500px;
-}
-
-h1 {
-    font-size: 24px;
-    text-align: center;
-}
-
-.bayan_list {
-    padding: 0;
-    font-size: 18px;
-    list-style: none;
-    transition: all 1.3s;
-    box-sizing: border-box;
-}
-
-.bayan_list li a {
+.main_bayan_img {
     display: block;
-    text-decoration: none;
-    border-top: 2px solid grey;
-    padding: 10px;
-    padding-left: 20px;
-    transition: all 1.3s;
-    box-sizing: border-box;
-}
-
-.bayan_item {
-    margin: 0;
-    padding: 0;
     height: 0;
-    overflow: hidden;
     transition: all 1.3s;
-    box-sizing: border-box;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
+.main_bayan_title {
+    text-align: left;
+    font-weight: 500;
+    transition: all 1.3s;
 }
-.bayan_list li:hover{
-    cursor: pointer;
-  }
 
-.bayan_list li:first-child ul {
+.input_check:checked~.main_bayan_img{
     height: 100px;
-    overflow: hidden;
-  }
-.bayan_list li:hover ul {
-    height: 100px;
-    overflow: hidden;
-  }
-
-.bayan_list li:hover li:first-child ul {
-    height: 0;
-}
-.bayan_list li:hover a{
-    color: black;
 }
 
-.bayan_list li a:active ul {
-    height: 100px;
-    overflow: hidden;
-  }
+.input_check:checked~.main_bayan_title .main_icon{
+    transform: rotate(90deg);
+}
+
+.input_check:checked~.main_bayan_title {
+    color:black;
+}
