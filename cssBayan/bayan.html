@@ -5,39 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RS-School Task:CSS bayan with meme</title>
     <link rel="stylesheet" href="/cssBayan/bayan.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>CSS Bayan</h1>
-    <ul class="bayan_list">
-        <li>
-            <a href="#">You can just copy and past CSS
-                <img src="/cssBayan/img/1.png" alt="мем с ленивцем">
-            </a>
-        </li>
-        <li>
-            <a href="#">Keep calm and carry on
-                <img src="/cssBayan/img/2.png" alt="мем с ленивцем">
-            </a>
-        </li>
-        <li>
-            <a href="#">Worl-life balance
-                <img src="/cssBayan/img/3.png" alt="мем с ленивцем">
-            </a>
-        </li>
-        <li>
-            <a href="#">Dude, where is JS?
-                <img src="/cssBayan/img/4.png" alt="мем с ленивцем">
-            </a>
-        </li>
-        <li>
-            <a href="#">Relax and take it easy
-                <img src="/cssBayan/img/5.png" alt="мем с ленивцем">
-            </a>
-        </li>
-    </ul>
+    <header class="header">
+        <div class="container">
+            <h1>CSS Bayan</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main_bayan_content">
+                <input type="radio" name="meme" id="meme-1" class="input_check" hidden checked>
+                <label for="meme-1" class="main_bayan_title">
+                    <span>You can't just copy and past CSS</span>
+                    <img src="/cssBayan/icons/close.png" alt="close" class="main_icon">
+                </label>
+                <label for="meme-1" class="main_bayan_img">
+                    <img class="meme_img" src="/cssBayan/img/1.png" alt="мем с ленивцем">
+                </label>
+            </div>
+
+            <div class="main_bayan_content">
+                <input type="radio" name="meme" id="meme-2" class="input_check" hidden>
+                <label for="meme-2" class="main_bayan_title">
+                    <span>Keep calm and carry on</span>
+                    <img src="/cssBayan/icons/close.png" alt="close" class="main_icon">
+                </label>
+                <label for="meme-2" class="main_bayan_img">
+                    <img class="meme_img" src="/cssBayan/img/2.png" alt="мем с ленивцем">
+                </label>
+            </div>
+
+            <div class="main_bayan_content">
+                <input type="radio" name="meme" id="meme-3" class="input_check" hidden>
+                <label for="meme-3" class="main_bayan_title">
+                    <span>Work-life balance</span>
+                    <img src="/cssBayan/icons/close.png" alt="close" class="main_icon">
+                </label>
+                <label for="meme-3" class="main_bayan_img">
+                    <img class="meme_img" src="/cssBayan/img/3.png" alt="мем с ленивцем">
+                </label>
+            </div>
+
+            <div class="main_bayan_content">
+                <input type="radio" name="meme" id="meme-4" class="input_check" hidden>
+                <label for="meme-4" class="main_bayan_title">
+                    <span>Dude, where is JS?</span>
+                    <img src="/cssBayan/icons/close.png" alt="close" class="main_icon">
+                </label>
+                <label for="meme-4" class="main_bayan_img">
+                    <img class="meme_img" src="/cssBayan/img/4.png" alt="мем с ленивцем">
+                </label>
+            </div>
+
+            <div class="main_bayan_content">
+                <input type="radio" name="meme" id="meme-5" class="input_check" hidden>
+                <label for="meme-5" class="main_bayan_title">
+                    <span>Relax and take it easy</span>
+                    <img src="/cssBayan/icons/close.png" alt="close" class="main_icon">
+                </label>
+                <label for="meme-5" class="main_bayan_img">
+                    <img class="meme_img" src="/cssBayan/img/5.png" alt="мем с ленивцем">
+                </label>
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
